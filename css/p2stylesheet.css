@@ -1,0 +1,26 @@
+body {
+    
+    background-image: url('/resources/wall2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
+
+#lever_img {
+    margin-left: 70%;
+    margin-top: 15%;
+    position: fixed;
+}
+
+#img_door{
+    margin-left: 300px;
+    margin-top: 262px;
+    position: fixed;
+}
+
+#chair_img {
+
+    margin-top: 200px;
+    margin-left: 750px;
+}
