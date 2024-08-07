@@ -7,7 +7,7 @@ function render() {
 
 	button.addEventListener('click', function(){
 		console.log("hola");
-		door.srcName = "/resources/door_open.jpg";
+		door.src = "/resources/door_open.jpg";
 	});
 }
 
