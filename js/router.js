@@ -3,7 +3,7 @@ import routes from '/js/routes.js';
 
 async function launchController(controllerName) {
 	console.log("launchin controller", controllerName);
-	const module = await import(`./controler/${controllerName}.js`);
+	const module = await import(`./controller/${controllerName}.js`);
 	console.log(module);
 	module.default.init();
 }
@@ -39,6 +39,7 @@ function getPath(urlStr) {
 
 function navigateOnHashChange() {
 	addEventListener('hashchange', (e) => {
+		console.log("hash");
 		const path = getPath(e.newURL);
 		navigate(path);
 	})
@@ -46,7 +47,6 @@ function navigateOnHashChange() {
 
 
 function init() {
-
 
 	window.location.hash = window.location.hash || routes.home.path;
 	console.log("hello again", window.location.hash);
