@@ -1,13 +1,17 @@
 function render() {
 	console.log('entrou no render');
-	const button = document.getElementById('lever');
+	const button = $('#lever_img');
 	console.log('um botao', button);
-	const door = document.getElementById('door_close');
+	const door = $('#door_img');
 	console.log('door', door);
 
-	button.addEventListener('click', function(){
+	button.on('click', function(){
 		console.log("hola");
-		door.srcName = "/resources/door_open.jpg";
+		console.log(door.attr('src'));
+		door.attr('src', '/resources/door_open.jpg');
+		button.attr('src','/resources/lever_upsidedown.png');
+		console.log(button.attr('src'));
+		console.log(door.attr('src'));
 	});
 }
 
