@@ -6,11 +6,13 @@ body {
 
 #lever {
     margin-left: 200px;
-    margin-top: 200px;
+    margin-top: 400px;
 
 }
 
 #door_close{
-    margin-left: 500px;
+    margin-top: -117px;
+    margin-left: 1000px;
+
     
 }
