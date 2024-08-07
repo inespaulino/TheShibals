@@ -1,4 +1,16 @@
 img {
     max-width: 100%;
     height: auto;
+    
+}
+
+#lever {
+    margin-left: 200px;
+    margin-top: 200px;
+
+}
+
+#door_close{
+    margin-left: 1000px;
+    
 }
