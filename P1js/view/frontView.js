@@ -1,6 +1,4 @@
 function render() {
-	window.location.pathname = "html/player1.html";
-
 	console.log('entrou no render');
 	const button = document.getElementById('lever');
 	console.log('um botao', button);
