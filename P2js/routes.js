@@ -5,11 +5,11 @@ export default {
 	},
 	player1: {
 		path: '/player1',
-		controller: 'p1Controller'
+		controller: 'frontController'
 	},
 	player2: {
 		path: '/player2',
-		controller: 'p2Controller'
+		controller: 'frontController'
 	},
 	currentPath: {
 		path: '',
