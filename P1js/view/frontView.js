@@ -4,11 +4,20 @@ function render() {
 	console.log('um botao', button);
 	const door = document.getElementById('door_close');
 	console.log('door', door);
+	const myWorker = new Worker("worker.js");
 
-	button.addEventListener('click', function(){
-		console.log("hola");
+	button.addEventListener('click', function(event){
+		
+		console.log("Enviar porta!");
+		myWorker.postMessage(event.data);
 		door.srcName = "/resources/door_open.jpg";
 	});
+
+	socket.addEventListener('open', function (event) {
+        const initialMessage = 'Hello Server!';
+        console.log('Sending message: ', initialMessage);
+        socket.send(initialMessage);
+    });
 }
 
 export default { render };
