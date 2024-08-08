@@ -1,0 +1,33 @@
+img{	
+	
+	margin-top: 150px;
+	width: 700px; 
+	height: 200px;
+}
+
+body{
+	background-image: url('/resources/menubackground.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+#player1{
+  background: url(/resources/rock.png) no-repeat 6px center;
+  background-size: 100% 100%;
+  width: 150px;
+  height: 50px;
+  display: block;
+  border:0px;
+  
+}
+
+#player2{
+	background: url(/resources/rock.png) no-repeat 6px center;
+	background-size: 100% 100%;
+	width: 150px;
+	height: 50px;
+	display: cov;
+	border:0px;
+
+}
