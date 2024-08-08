@@ -43,7 +43,7 @@ function render() {
 		console.log("state potions",state.state.potions);
 
 		if (checkPotion(state.state.potions, state.state.potionsRight)) {
-
+			state.state.chestOpener = true;
 			window.location.hash = '/player1leftside';
 
 		}
@@ -60,7 +60,7 @@ function render() {
 
 
 		if (checkPotion(state.state.potions, state.state.potionsRight)) {
-
+			state.state.chestOpener = true;
 			window.location.hash = '/player1leftside';
 
 		}
@@ -76,12 +76,11 @@ function render() {
 		console.log("state potions",state.state.potions);
 
 		if (checkPotion(state.state.potions, state.state.potionsRight)) {
-
+			state.state.chestOpener = true;
 			window.location.hash = '/player1leftside';
-
 		}
 		if (state.state.potions.length == 5 && state.state.potions != state.potionsRight) {
-			state.setPotions([])
+			state.setPotions([]);
 			render();
 		}
 	});

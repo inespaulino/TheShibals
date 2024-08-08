@@ -99,3 +99,49 @@
 audio{
     display: none;
 }
+
+#bernardo{
+	width: 200px; 
+	height: 150px;
+	
+}
+#arada{
+	width: 200px; 
+	height: 150px;
+	
+}
+#guilherme{
+	width: 200px; 
+	height: 150px;
+	
+}
+#deli{
+	width: 200px; 
+	height: 150px;
+		
+}
+#ines{
+	width: 200px; 
+	height: 150px;
+	
+		
+}
+#susana{
+	width: 200px; 
+	height: 150px;	
+}
+#pascoa{
+	width: 200px; 
+	height: 150px;	
+}
+#marcelo{
+	width: 200px; 
+	height: 150px;	
+}
+#fotos{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 10px;
+	padding-left: 300px;
+	padding-top: 50px;
+}

@@ -5,7 +5,8 @@ const state = {
 	"potionsRight": ['yellowpotion', 'bluepotion', 'pinkpotion','bluepotion','pinkpotion'],
 	"setPotions" : function(potion){
 		this.potions = potion;
-	}
+	},
+	"chestOpener": true
 }
 
 function setPotions(potion){
