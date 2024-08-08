@@ -95,3 +95,7 @@
     right:5px;
     bottom: 100px;
 }
+
+audio{
+    display: none;
+}
