@@ -24,30 +24,11 @@ function render() {
 	const button = $('#books_img');
     
 	console.log('um botao', button);
-    const button3 = $('#arrow_left');
-    const button4 = $('arrow_right');
-	
 
 	button.on('click', function(){
 		console.log("hola");
 		
 		console.log(button.attr('src'));
-		
-	});
-   
-    button3.on('click', function(){
-		window.location.href = "player1.html";
-		console.log("hola");
-		
-		console.log(button3.attr('src'));
-		
-	});
-	
-    button4.on('click', function(){
-		window.location.href = "backwall.html";
-		console.log("hola");
-		
-		console.log(button4.attr('src'));
 		
 	});
 }

@@ -2,19 +2,13 @@ import routes from '/P1js/routes.js';
 
 
 async function launchController(controllerName) {
-	console.log("launchin controller", controllerName);
 	const module = await import(`./controller/${controllerName}.js`);
-	console.log(module);
 	module.default.init();
 }
 
 function setCurrentPath({ path, controller }) {
 	routes.currentPath.path = path;
 	routes.currentPath.controller = controller;
-	console.log("Oal2", routes.currentPath.path);
-	console.log("Oal2", routes.currentPath.controller);
-
-	console.log("current path: ", routes.currentPath);
 }
 
 function navigate(path) {
@@ -25,8 +19,6 @@ function navigate(path) {
 
 	const routeKey = Object.keys(routes).find(key => routes[key].path === path);
 	const route = routes[routeKey] || routes.home;
-
-	console.log(route);
 
 	setCurrentPath(route);
 	launchController(route.controller);
@@ -41,7 +33,6 @@ function getPath(urlStr) {
 
 function navigateOnHashChange() {
 	addEventListener('hashchange', (e) => {
-		console.log("hash");
 		const path = getPath(e.newURL);
 		navigate(path);
 	})
@@ -51,7 +42,6 @@ function navigateOnHashChange() {
 function init() {
 
 	window.location.hash = window.location.hash || routes.home.path;
-	console.log("hello again", window.location.hash);
 
 	navigate(getPath(window.location.href));
 	navigateOnHashChange();

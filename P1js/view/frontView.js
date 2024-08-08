@@ -11,7 +11,7 @@ function render() {
 	item.innerHTML = `<div>
 		<img id="lever_img" src="/resources/${getLever(state.lever)}"/>
 
-    	<img id="door_img" src="/resources/door_closed.jpg"/>
+    	<img id="door_img" src="/resources/${getDoor(state.door)}"/>
 
 		<a href="#/player1rightside">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
@@ -19,8 +19,7 @@ function render() {
 
 		<a href="#/player1leftside">
        		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
-    	</a>
-						
+    	</a>			
 	</div>`
 	
 	div.appendChild(item);
@@ -45,6 +44,12 @@ function getLever(lever){
 	if (lever)
 		return "lever_upsidedown.png";
 	return "lever.png"
+}
+
+function getDoor(door){
+	if (door)
+		return "door_open.jpg";
+	return "door_closed.jpg";
 }
 
 export default { render };
