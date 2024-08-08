@@ -4,7 +4,8 @@ function render() {
 
 	const div = document.querySelector('#p1div');
 	div.innerHTML = '';
-    const lol = document.getElementById('p1frontbody') || document.getElementById('p1rightbody') || document.getElementById("p1backbody") || document.getElementById();
+	console.log("entrou");
+    const lol = document.getElementById('p1frontbody') || document.getElementById('p1rightbody') || document.getElementById("p1backbody") || document.getElementById("p1alchemistbody");
     lol.id = 'p1leftbody';
 
 	const item = document.createElement('div');

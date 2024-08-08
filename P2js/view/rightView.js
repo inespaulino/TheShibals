@@ -25,7 +25,7 @@ function render() {
 
 	button.on('click', function(){
 		console.log("hola");
-		
+		window.location.hash = "/books";
 		console.log(button.attr('src'));
 		
 	});

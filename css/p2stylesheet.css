@@ -113,6 +113,15 @@ audio{
 
 }
 
+#book_img{
+    height: auto; 
+    width: auto; 
+    margin-left: 25%;
+    margin-top: 5%;
+    position: absolute;
+
+}
+
 #bernardo{
 	width: 200px; 
 	height: 150px;

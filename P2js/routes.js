@@ -27,6 +27,10 @@ export default {
 		path: '/board_full',
 		controller: 'boardController'
 	},
+	book:{
+		path: '/books',
+		controller: '/bookController'
+	},
 	currentPath: {
 		path: '',
 		controller: ''
