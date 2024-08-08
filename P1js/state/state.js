@@ -1,6 +1,15 @@
-export default {
+const state = {
 	"door" : false,
 	"lever" : false,
 	"potions": [],
-	"potionsRight": ['yellowpotion', 'bluepotion', 'pinkpotion','bluepotion','pinkpotion']
+	"potionsRight": ['yellowpotion', 'bluepotion', 'pinkpotion','bluepotion','pinkpotion'],
+	"setPotions" : function(potion){
+		this.potions = potion;
+	}
 }
+
+function setPotions(potion){
+	state.potions = potion;
+}
+
+export default {setPotions, state};

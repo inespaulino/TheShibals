@@ -1,12 +1,12 @@
 
-import state from "/P1js/state/state.js";
+import state from "../state/state.js";
 
 function render() {
-    
+
 	const div = document.querySelector('#p1div');
 	div.innerHTML = '';
-    const lol = document.getElementById('p1leftbody') || document.getElementById('p1rightbody') || document.getElementById("p1frontbody");
-    lol.id = 'p1alchemistbody';
+	const lol = document.getElementById('p1leftbody') || document.getElementById('p1rightbody') || document.getElementById("p1frontbody") || document.getElementById("p1alchemistbody");
+	lol.id = 'p1alchemistbody';
 
 	const item = document.createElement('div');
 
@@ -19,34 +19,81 @@ function render() {
 	<img id="yellow_potion" src="/resources/yellowpotion.png" alt="Yellow Potion"/>
  				
 	</div>`;
-	
+
 	div.appendChild(item);
 
 	const button = $('#blue_potion');
-    const button2 = $('#pink_potion');
-    const button3 = $('#yellow_potion');
+	const button2 = $('#pink_potion');
+	const button3 = $('#yellow_potion');
 
 	console.log('entrou no render');
 
-    button.on('click', potian("bluepotion"));
-    button2.on('click', potian("pinkpotion"));
-    button3.on('click', potian("yellowpotion"));
+	function checkPotion(potion, right) {
+		for (let i = 0; i < right.length; i++) {
+			console.log("potions", potion, right);
+			if (potion[i] != right[i])
+				return false;
+		}
+		return true;
+	} 
+	button.on('click', function () {
+
+		console.log("azul")
+		state.state.potions.push("bluepotion");
+		console.log("state potions",state.state.potions);
+
+		if (checkPotion(state.state.potions, state.state.potionsRight)) {
+
+			window.location.hash = '/player1leftside';
+
+		}
+		if (state.state.potions.length == 5 && state.state.potions != state.potionsRight) {
+			state.setPotions([]);
+			render();
+		}
+	});
+	button2.on('click', function () {
+
+		console.log("rosa")
+		state.state.potions.push("pinkpotion");
+		console.log("state potions",state.state.potions);
+
+
+		if (checkPotion(state.state.potions, state.state.potionsRight)) {
+
+			window.location.hash = '/player1leftside';
+
+		}
+		if (state.state.potions.length == 5 && state.state.potions != state.potionsRight) {
+			state.setPotions([])
+			render();
+		}
+	});
+	button3.on('click', function () {
+
+		console.log("amarelo")
+		state.state.potions.push("yellowpotion");
+		console.log("state potions",state.state.potions);
+
+		if (checkPotion(state.state.potions, state.state.potionsRight)) {
+
+			window.location.hash = '/player1leftside';
+
+		}
+		if (state.state.potions.length == 5 && state.state.potions != state.potionsRight) {
+			state.setPotions([])
+			render();
+		}
+	});
 
 }
-
-
-function potian(nome){
-	
-	console.log(nome);
-	state.potions.push(nome);
-
-	if(state.potions == state.potionsRight){
-
-		window.document.hash = '/player1leftside';
-		
-	}
-	if(state.potions.length == 5 && state.potions != state.potionsRight){
-		render();
+function checkPotion(potion, right) {
+	console.log(right.length);
+	for (let i = 0; i < right.length; i++) {
+		console.log("potions", potion, right);
+		if (potion[i] != right[length])
+			return false;
+		true;
 	}
 }
 
