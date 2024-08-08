@@ -24,6 +24,14 @@
     min-height: 100vh;
     
 }
+#p1backbody {
+    
+    background-image: url('/resources/wall2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
 
 
 #lever_img {
@@ -63,4 +71,10 @@
     margin-left: 50%;
     margin-top: 20%;
     position: fixed;
+}
+
+#chair_img {
+
+    margin-top: 200px;
+    margin-left: 750px;
 }
