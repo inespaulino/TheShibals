@@ -9,6 +9,7 @@ function render() {
 
 	item.innerHTML = `<div>
         <img id="chair_img" src="/resources/chair.png"> 
+		
 		<a href="#/player2leftside">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
     	</a>
