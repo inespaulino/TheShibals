@@ -1,3 +1,5 @@
+import state from "../state/state.js";
+
 function render() {
 	const div = document.querySelector('#p1div');
 	div.innerHTML = '';
@@ -7,7 +9,9 @@ function render() {
 	const item = document.createElement('div');
 
 	item.innerHTML = `<div>
-        <img id="books_img" src="/resources/oldbooks.png"> 
+
+	
+        <img id="prizeChest_img" src="/resources/chestClosed4.png"> 
 
         <a href="#/player1backside">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
@@ -21,15 +25,21 @@ function render() {
 	div.appendChild(item);
 
 	console.log('entrou no render');
-	const button = $('#books_img');
+	const button = $('#prizeChest_img');
     
 	console.log('um botao', button);
 
 	button.on('click', function(){
-		console.log("hola");
-		
-		console.log(button.attr('src'));
-		
+		console.log(state.state.chestOpener);
+		if (state.state.chestOpener == true) {
+			button.attr("src", "/resources/oldbooks.png");
+			button.on('click', function(){
+				window.location.hash = "/books";
+
+			}
+				)
+
+		}
 	});
 }
 

@@ -64,8 +64,8 @@
 #books_img {
     height: auto; 
     width: auto; 
-    max-width: 200px; 
-    max-height: 200px; 
+    max-width: 100px; 
+    max-height: 100px; 
     margin-left: 20%;
     margin-top: 30%;
 
@@ -78,6 +78,22 @@
     margin-left: 50%;
     margin-top: 20%;
     position: absolute;
+}
+
+#prizeChest_img{
+    width: 200px;
+    height: 200px;
+    margin-left: 20%;
+    margin-top: 30%;
+}
+
+#book_img{
+    height: auto; 
+    width: auto; 
+    margin-left: 35%;
+    margin-top: 10%;
+    position: absolute;
+
 }
 
 #chair_img {
