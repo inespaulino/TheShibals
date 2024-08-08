@@ -9,9 +9,9 @@ function render() {
 	lol.id = 'p2frontbody';
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-		<img id="${getLeverId(state.wardrobe)}" src="/resources/${getLever()}"/>
+		<img id="${getLeverId(state.wardrobe)}" src="/resources/${getLever(state.lever)}"/>
 
-    	<img id="img_door" src="/resources/${getDoor()}"/>
+    	<img id="img_door" src="/resources/${getDoor(state.door)}"/>
 
 		<a href="#/player2rightside">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
