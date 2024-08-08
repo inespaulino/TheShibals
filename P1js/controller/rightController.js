@@ -1,7 +1,7 @@
-import rightsideview from "/P1js/view/rightsideView.js";
+import rightview from "/P1js/view/rightView.js";
 
 function init() {
-	rightsideview.render();
+	rightview.render();
 }
 
 export default { init };

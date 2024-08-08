@@ -6,17 +6,3 @@ body {
     min-height: 100vh;
 }
 
-#books_img {
-    height: auto; 
-    width: auto; 
-    max-width: 200px; 
-    max-height: 200px; 
-    margin-left: 20%;
-    margin-top: 30%;
-
-}
-#board_img {
-    margin-left: 60%;
-    margin-top: -50%;
-
-}
