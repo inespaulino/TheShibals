@@ -19,6 +19,10 @@ export default {
 		path: '/player1backside',
 		controller: 'backController'
 	},
+	alchemy_table_full:{
+		path: '/alchemy_table',
+		controller: '/alchemyController'
+	},
 	currentPath: {
 		path: '',
 		controller: ''

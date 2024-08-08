@@ -7,7 +7,10 @@ function render() {
 
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-        <img id="alchemy_img" src="/resources/Alchemy_table.png">
+		<a href="#/alchemy_table>
+			<img id="alchemy_img" src="/resources/Alchemy_table.png">
+		</a>
+        
        
         <a href="#/player1">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
