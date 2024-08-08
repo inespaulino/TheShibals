@@ -23,6 +23,10 @@ export default {
 		path: '/alchemy_table',
 		controller: '/alchemyController'
 	},
+	book:{
+		path: '/books',
+		controller: '/bookController'
+	},
 	currentPath: {
 		path: '',
 		controller: ''
