@@ -10,8 +10,15 @@ function render() {
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
         <img id="board_img" src="/resources/board.png">
-        <img id="arrow_left" src="/resources/arrowleft.png"> 
-        <img id="arrow_right" src="/resources/arrowright.png"> 						
+
+        <a href="#/player2">
+       		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
+    	</a>
+
+		<a href="#/player2backside">
+       		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
+    	</a>	
+							
 	</div>`
 	
 	

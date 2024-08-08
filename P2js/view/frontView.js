@@ -13,8 +13,13 @@ function render() {
 
     	<img id="img_door" src="/resources/door_closed.jpg"/>
 
-		<img id="arrow_left" src="/resources/arrowleft.png"> 
-        <img id="arrow_right" src="/resources/arrowright.png">
+		<a href="#/player2rightside">
+       		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
+    	</a>
+
+		<a href="#/player2leftside">
+       		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
+    	</a>
 						
 	</div>`
 

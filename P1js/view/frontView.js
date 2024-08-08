@@ -1,13 +1,9 @@
 function render() {
-
-
-	const background = document.querySelector('#p1div');
 	
-	const body = document.querySelector('#p1leftbody') || document.querySelector('#p1rightbody') || document.querySelector('#p1frontbody');
-	console.log(body);
-	body.innerHTML = '';
-	const lol = $('#p1leftbody') || $('#p1rightbody') || $('#p1frontbody');
-    lol.attr('id','p1frontbody');
+	const div = document.querySelector('#p1div');
+	div.innerHTML = '';
+    const lol = document.getElementById('p1leftbody') || document.getElementById('p1rightbody') || document.getElementById("p1backbody") || document.getElementById("p1frontbody");
+    lol.id = 'p1frontbody';
 
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
@@ -15,13 +11,17 @@ function render() {
 
     	<img id="door_img" src="/resources/door_closed.jpg"/>
 
-		<img id="arrow_left" src="/resources/arrowleft.png"> 
-        <img id="arrow_right" src="/resources/arrowright.png">
+		<a href="#/player1rightside">
+       		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
+    	</a>
+
+		<a href="#/player1leftside">
+       		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
+    	</a>
 						
 	</div>`
 	
-	background.appendChild(item);
-	body.appendChild(background);
+	div.appendChild(item);
 
 	console.log('entrou no render');
 	const button = $('#lever_img');
@@ -44,17 +44,23 @@ function render() {
 		
 	});
 	button2.on('click', function(){
+		console.log('Navigating to alchemywall.html');
 		console.log("hola");
 		
 		console.log(button2.attr('src'));
 		
 	});
     button3.on('click', function(){
+
+		console.log('Navigating to bookwall.html');
 		console.log("hola");
 		
 		console.log(button3.attr('src'));
 		
 	});
+
+	
 }
+
 
 export default { render };
