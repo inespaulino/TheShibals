@@ -100,6 +100,19 @@ audio{
     display: none;
 }
 
+#wardrobe_img{
+
+    height: auto; 
+    width: auto; 
+    max-width: 500px; 
+    max-height: 500px; 
+    margin-left: 50%;
+    margin-top: 10%;
+    position: fixed;
+    
+
+}
+
 #bernardo{
 	width: 200px; 
 	height: 150px;
