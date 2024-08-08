@@ -73,9 +73,11 @@
 
 
 #alchemy_img{
+    height: auto; 
+    width: auto; 
     margin-left: 50%;
     margin-top: 20%;
-    position: fixed;
+    position: absolute;
 }
 
 #chair_img {

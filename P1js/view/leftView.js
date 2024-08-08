@@ -1,24 +1,25 @@
+import state from "/P1js/state/state.js"
+
 function render() {
 
 	const div = document.querySelector('#p1div');
 	div.innerHTML = '';
-    const lol = document.getElementById('p1frontbody') || document.getElementById('p1rightbody') || document.getElementById("p1backbody");
+    const lol = document.getElementById('p1frontbody') || document.getElementById('p1rightbody') || document.getElementById("p1backbody") || document.getElementById("p1alchemistbody");
     lol.id = 'p1leftbody';
 
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-		<a href="#/alchemy_table>
-			<img id="alchemy_img" src="/resources/Alchemy_table.png">
-		</a>
+
+			<img id="alchemy_img" src="/resources/Alchemy_table.png" alt="Alchemy Table"/>
+
         
-       
         <a href="#/player1">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
     	</a>
 
 		<a href="#/player1backside">
        		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
-    	</a>						
+    	</a>
 	</div>`
 	
 	
@@ -27,30 +28,14 @@ function render() {
 	console.log('entrou no render');
 	const button = $('#alchemy_img');
 	console.log('um botao', button);
-	const button2 = $('#arrow_left');
-    const button3 = $('arrow_right');
 
 	button.on('click', function(){
 		console.log("hola");
 		
-		console.log(button.attr('src'));
+		window.location.hash = "/alchemy_table";
 		
 	});
-    
-	
 
-	button2.on('click', function(){
-		console.log("hola");
-		
-		console.log(button2.attr('src'));
-		
-	});
-    button3.on('click', function(){
-		console.log("hola");
-		
-		console.log(button33.attr('src'));
-		
-	});
 }
 
 export default { render };

@@ -32,6 +32,15 @@
     
 }
 
+#p2boardbody {
+    
+    background-image: url('/resources/woodenBoard.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
+
 
 #lever_img {
     margin-left: 70%;
