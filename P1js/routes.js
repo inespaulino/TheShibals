@@ -11,6 +11,10 @@ export default {
 		path: '/player2',
 		controller: 'frontController'
 	},
+	sideWall: {
+		path: '/player1leftside',
+		controller: 'leftController'
+	},
 	currentPath: {
 		path: '',
 		controller: ''
