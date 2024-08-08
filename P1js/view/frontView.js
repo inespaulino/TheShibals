@@ -1,4 +1,4 @@
-import state from "P1js/state/state.js";
+import state from "/P1js/state/state.js";
 
 function render() {
 	
