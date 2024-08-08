@@ -30,7 +30,36 @@
         <a class="btn btn-primary" style="margin-right: 10px" href="#/player1" id="player1"  >Player 1</a>
         <a class="btn btn-danger" href="#/player2" id="player2" >Player 2</a>
 
-     </div>
+    </div>
+
+
+    <script>
+        const socket = new WebSocket('ws://localhost:8080');
+
+        const player1Button = document.getElementById('player1');
+        const player2Button = document.getElementById('player2');
+
+        socket.addEventListener('open', () => {
+            console.log('Connected to server');
+        });
+
+        socket.addEventListener('message', (event) => {
+            const state = JSON.parse(event.data);
+            alert('state: ', state);
+            player1Button.disabled = state.player1;
+            alert(player1Button.disabled);
+            player2Button.disabled = state.player2;
+            alert(player2Button.disabled);
+        });
+
+        player1Button.addEventListener('click', () => {
+            socket.send(JSON.stringify({player: 'player1'}));
+        });
+
+        player2Button.addEventListener('click', () => {
+            socket.send(JSON.stringify({player: 'player2'}));
+        });
+    </script>
    
 </body>
 

@@ -1,0 +1,13 @@
+body {
+    
+    background-image: url('/resources/wall2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
+#chair_img {
+
+    margin-top: 200px;
+    margin-left: 750px;
+}
