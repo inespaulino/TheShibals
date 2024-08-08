@@ -145,3 +145,9 @@ audio{
 	padding-left: 300px;
 	padding-top: 50px;
 }
+#wardrobe_img{
+    margin-left: 300px;
+    margin-top: 262px;
+    position: fixed;
+
+}
