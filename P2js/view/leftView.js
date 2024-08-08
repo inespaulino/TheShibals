@@ -2,7 +2,7 @@ function render() {
 
 	const div = document.querySelector('#p2div');
 	div.innerHTML = '';
-    const lol = document.getElementById('p2frontbody') || document.getElementById('p2rightbody') || document.getElementById("p2backbody");
+    const lol = document.getElementById('p2frontbody') || document.getElementById('p2rightbody') || document.getElementById("p2backbody") || document.getElementById("p2boardbody");
     lol.id = 'p2leftbody';
     
 
@@ -26,9 +26,8 @@ function render() {
 	const button = $('#board_img');
 
 	button.on('click', function(){
-		console.log("hola");
 		
-		console.log(button.attr('src'));
+		window.location.hash = "/board_full";
 		
 	});
 

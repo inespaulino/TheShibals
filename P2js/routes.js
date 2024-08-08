@@ -23,6 +23,10 @@ export default {
 		path: '/player2backside',
 		controller: 'backController'
 	},
+	board_full:{
+		path: '/board_full',
+		controller: 'boardController'
+	},
 	currentPath: {
 		path: '',
 		controller: ''
