@@ -12,9 +12,9 @@ function render() {
 
     	<img id="chair_img" src="/resources/chair.png"/>						
 	</div>`
-
-	background.appendChild(item);
 	
+	background.appendChild(item);
+
 	console.log('entrou no render');
 	const button = $('#lever_img');
 	console.log('um botao', button);
