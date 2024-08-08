@@ -6,7 +6,9 @@ const state = {
 	"setPotions" : function(potion){
 		this.potions = potion;
 	},
-	"chestOpener": true
+	"chestOpener": true,
+	"booksClicked": false
+
 }
 
 function setPotions(potion){

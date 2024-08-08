@@ -11,6 +11,10 @@ function render() {
 
 
 		<img style="display: flex; justify-content: center; align-items: center" id="book_img" src="/resources/book.png" alt="no book"/>
+
+        <a href="#/player1rightside">
+       		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
+    	</a>
         
 
 
