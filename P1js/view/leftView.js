@@ -10,6 +10,7 @@ function render() {
         <img id="alchemy_img" src="/resources/Alchemy_table.png">						
 	</div>`
 	
+	
 	background.appendChild(item);
     body.appendChild(background);
 
