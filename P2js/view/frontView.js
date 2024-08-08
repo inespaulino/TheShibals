@@ -42,7 +42,7 @@ function getLever(lever) {
 		return "lever_upsidedown.png";
 	else if (!lever && state.wardrobe)
 		return "lever.png";
-	return "wardrobe.png";
+	return "wardrobe1.png";
 }
 
 function getDoor(door) {
