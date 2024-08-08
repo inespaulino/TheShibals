@@ -24,6 +24,14 @@
     min-height: 100vh;
     
 }
+#p1backbody {
+    
+    background-image: url('/resources/wall2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
 
 
 #lever_img {
@@ -53,14 +61,37 @@
     margin-top: 30%;
 
 }
-#board_img {
-    margin-left: 60%;
-    margin-top: -50%;
 
-}
 
 #alchemy_img{
     margin-left: 50%;
     margin-top: 20%;
     position: fixed;
+}
+
+#chair_img {
+
+    margin-top: 200px;
+    margin-left: 750px;
+}
+#arrow_left{
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px; 
+    margin-left: 0px;
+    margin-top: 30%;
+    position: absolute;
+    left:5px;
+    bottom: 100px;
+}
+
+#arrow_right{
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px; 
+    position: absolute;
+    right:5px;
+    bottom: 100px;
 }

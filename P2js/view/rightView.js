@@ -1,29 +1,32 @@
 function render() {
     console.log("riiiight");
-	const div = document.querySelector('#p1div');
-	div.innerHTML = '';
-    const lol = document.getElementById('p1leftbody') || document.getElementById('p1backbody') || document.getElementById("p1frontbody");
-    lol.id = 'p1rightbody';
+	const background = document.querySelector('#p2div');
+	const body = document.querySelector('#p2frontbody') || document.querySelector('#p2backbody');
+    body.innerHTML='';
+    const lol = $('#p2frontbody') || $('#p2backbody');
+    lol.attr('id','p2rightbody');
 
 	const item = document.createElement('div');
 
 	item.innerHTML = `<div>
         <img id="books_img" src="/resources/oldbooks.png"> 
 
-        <a href="#/player1backside">
+		<a href="#/player2backside">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
     	</a>
 
-		<a href="#/player1">
+		<a href="#/player2">
        		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
-    	</a>					
+    	</a>	
+        					
 	</div>`
 	
-	div.appendChild(item);
+	background.appendChild(item);
+    body.appendChild(background);
 
 	console.log('entrou no render');
 	const button = $('#books_img');
-    
+   
 	console.log('um botao', button);
     const button3 = $('#arrow_left');
     const button4 = $('arrow_right');
@@ -37,15 +40,12 @@ function render() {
 	});
    
     button3.on('click', function(){
-		window.location.href = "player1.html";
 		console.log("hola");
 		
 		console.log(button3.attr('src'));
 		
 	});
-	
     button4.on('click', function(){
-		window.location.href = "backwall.html";
 		console.log("hola");
 		
 		console.log(button4.attr('src'));

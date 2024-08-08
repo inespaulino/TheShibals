@@ -5,4 +5,25 @@ body {
     background-size: 100% 100%;
     min-height: 100vh;
 }
+#arrow_left{
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px; 
+    margin-left: 0px;
+    margin-top: 30%;
+    position: absolute;
+    left:5px;
+    bottom: 100px;
+}
+
+#arrow_right{
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px; 
+    position: absolute;
+    right:5px;
+    bottom: 100px;
+}
 

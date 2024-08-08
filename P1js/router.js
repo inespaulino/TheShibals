@@ -11,6 +11,8 @@ async function launchController(controllerName) {
 function setCurrentPath({ path, controller }) {
 	routes.currentPath.path = path;
 	routes.currentPath.controller = controller;
+	console.log("Oal2", routes.currentPath.path);
+	console.log("Oal2", routes.currentPath.controller);
 
 	console.log("current path: ", routes.currentPath);
 }

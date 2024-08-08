@@ -1,46 +1,44 @@
 function render() {
 
 	const background = document.querySelector('#p2div');
+	const body = document.querySelector('#p2frontbody') || document.querySelector('#p2backbody');
+    body.innerHTML='';
+    const lol = $('#p2frontbody') || $('#p2backody');
+    lol.attr('id','p2leftbody');
+    
 
-	const body = document.querySelector('#p2leftbody') || document.querySelector('#p2rightbody') || document.querySelector('#p2frontbody');
-	console.log(body);
-	body.innerHTML = '';
-	const lol = $('#p2leftbody') || $('#p2rightbody') || $('#p2frontbody');
-    lol.attr('id','p2frontbody');
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-		<img id="lever_img" src="/resources/lever.png"/>
+        <img id="board_img" src="/resources/board.png">
 
-    	<img id="img_door" src="/resources/door_closed.jpg"/>
-
-		<a href="#/player2rightside">
+        <a href="#/player2">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
     	</a>
 
-		<a href="#/player2leftside">
+		<a href="#/player2backside">
        		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
-    	</a>
-						
+    	</a>	
+							
 	</div>`
-
+	
+	
 	background.appendChild(item);
-	body.appendChild(background);
+    body.appendChild(background);
 
 	console.log('entrou no render');
-	const button = $('#lever_img');
+	const button = $('#board_img');
 	console.log('um botao', button);
-	const door = $('#img_door');
-	console.log('door', door);
 	const button2 = $('#arrow_left');
     const button3 = $('arrow_right');
 
 	button.on('click', function(){
 		console.log("hola");
-		console.log(door.attr('src'));
-		door.attr('src', '/resources/door_open.jpg');
-		button.attr('src','/resources/lever_upsidedown.png');
-		console.log(door.attr('src'));
+		
+		console.log(button.attr('src'));
+		
 	});
+    
+	
 
 	button2.on('click', function(){
 		console.log("hola");
