@@ -1,5 +1,5 @@
 function render() {
-
+    console.log("riiiight");
 	const background = document.querySelector('#p1div');
 	const body = document.querySelector('#p1frontbody') || document.querySelector('#p1backbody');
     body.innerHTML='';
