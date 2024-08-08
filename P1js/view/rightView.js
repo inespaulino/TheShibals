@@ -11,7 +11,7 @@ function render() {
 	item.innerHTML = `<div>
 
 	
-        <img id="prizeChest_img" src="/resources/${getChest(state.state.chestOpener)}"> 
+        <img id="prizeChest_img" src="/resources/${getChest(state.state.booksClicked)}"> 
 
         <a href="#/player1backside">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
@@ -32,6 +32,7 @@ function render() {
 	button.on('click', function () {
 		console.log(state.state.chestOpener);
 		if (state.state.chestOpener == true) {
+			state.state.booksClicked = true;
 			button.attr("src", "/resources/oldbooks.png");
 			button.on('click', function () {
 				window.location.hash = "/books";
@@ -43,8 +44,8 @@ function render() {
 	});
 }
 
-function getChest(chestOpener) {
-	if (chestOpener)
+function getChest(booksClicked) {
+	if (booksClicked)
 		return "oldbooks.png";
 	return "chestClosed4.png"
 }

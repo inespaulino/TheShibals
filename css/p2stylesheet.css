@@ -104,10 +104,10 @@ audio{
 
     height: auto; 
     width: auto; 
-    max-width: 1000px; 
-    max-height: 1000px; 
-    margin-left: 70%;
-    margin-top: 15%;
+    max-width: 500px; 
+    max-height: 500px; 
+    margin-left: 50%;
+    margin-top: 10%;
     position: fixed;
     
 
