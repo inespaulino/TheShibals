@@ -1,3 +1,5 @@
+import state from "P1js/state/state.js";
+
 function render() {
 	
 	const div = document.querySelector('#p1div');
@@ -7,7 +9,7 @@ function render() {
 
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-		<img id="lever_img" src="/resources/lever.png"/>
+		<img id="lever_img" src="/resources/${getLever(state.lever)}"/>
 
     	<img id="door_img" src="/resources/door_closed.jpg"/>
 
@@ -28,39 +30,21 @@ function render() {
 	console.log('um botao', button);
 	const door = $('#door_img');
 	console.log('door', door);
-	const button2 = $('#arrow_left');
-    const button3 = $('arrow_right');
-	
 
 	button.on('click', function(event){
-		
-		console.log(door.attr('src'));
+		state.lever = true;
+		state.door = true;
 		button.attr('src','/resources/lever_upsidedown.png');
 		door.attr('src', '/resources/door_open.jpg');
 		
-		console.log(button.attr('src'));
-		console.log(door.attr('src'));
-
-		
 	});
-	button2.on('click', function(){
-		console.log('Navigating to alchemywall.html');
-		console.log("hola");
-		
-		console.log(button2.attr('src'));
-		
-	});
-    button3.on('click', function(){
-
-		console.log('Navigating to bookwall.html');
-		console.log("hola");
-		
-		console.log(button3.attr('src'));
-		
-	});
-
 	
 }
 
+function getLever(lever){
+	if (lever)
+		return "lever_upsidedown.png";
+	return "lever.png"
+}
 
 export default { render };
