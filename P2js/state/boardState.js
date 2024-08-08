@@ -1,6 +1,7 @@
 const boardState = {
 	"door" : false,
 	"lever" : false,
+	"wardrobe" : false,
 	"names": [],
 	"namesRight": ['guilherme','ines','arada','bernardo','pascoa','deli','marcelo', 'susana'],
 	"setNames" : function(name){

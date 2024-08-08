@@ -62,7 +62,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			boardState.boardState.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
