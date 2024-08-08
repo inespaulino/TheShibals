@@ -31,8 +31,8 @@ function render() {
 	console.log('door', door);
 
 	button.on('click', function(event){
-		state.lever = true;
-		state.door = true;
+		state.state.lever = true;
+		state.state.door = true;
 		button.attr('src','/resources/lever_upsidedown.png');
 		door.attr('src', '/resources/door_open.jpg');
 		

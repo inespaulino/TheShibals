@@ -1,3 +1,5 @@
+import state from "/P2js/state/boardState.js";
+
 function render() {
 
 	const div = document.querySelector('#p2div');
@@ -6,9 +8,9 @@ function render() {
     lol.id = 'p2frontbody';
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-		<img id="lever_img" src="/resources/lever.png"/>
+		<img id="lever_img" src="/resources/${getLever()}"/>
 
-    	<img id="img_door" src="/resources/door_closed.jpg"/>
+    	<img id="img_door" src="/resources/${getDoor()}"/>
 
 		<a href="#/player2rightside">
        		<img id="arrow_right" src="/resources/arrowright.png" alt="Arrow Right"/>
@@ -28,12 +30,22 @@ function render() {
 	const door = $('#img_door');
 	console.log('door', door);
 	button.on('click', function(){
-		console.log("hola");
-		console.log(door.attr('src'));
+		state.boardState.lever = true;
+		state.boardState.door = true;
 		door.attr('src', '/resources/door_open.jpg');
 		button.attr('src','/resources/lever_upsidedown.png');
-		console.log(door.attr('src'));
+		
 	});
 }
+function getLever(lever){
+	if (lever)
+		return "lever_upsidedown.png";
+	return "lever.png"
+}
 
+function getDoor(door){
+	if (door)
+		return "door_open.jpg";
+	return "door_closed.jpg";
+}
 export default { render };
