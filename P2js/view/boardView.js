@@ -10,7 +10,7 @@ function render() {
 
 	const item = document.createElement('div');
 
-	item.innerHTML = `<div>
+	item.innerHTML = `<div id="fotos">
         
 	<img id="bernardo" src="/resources/bernardo.png" alt="Bernardo Foto"/>
  	
