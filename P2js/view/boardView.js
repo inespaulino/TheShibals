@@ -1,5 +1,6 @@
 
 import boardState from "/P2js/state/boardState.js";
+import state from "../state/state.js";
 
 function render() {
 
@@ -62,7 +63,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-			boardState.boardState.wardrobe = true;
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
@@ -78,7 +79,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
@@ -94,7 +95,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
@@ -110,7 +111,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
@@ -126,7 +127,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
@@ -142,7 +143,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
@@ -158,7 +159,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
@@ -174,7 +175,7 @@ function render() {
 		console.log("state names",boardState.boardState.names);
 
 		if (checkName(boardState.boardState.names, boardState.boardState.namesRight)) {
-
+			state.wardrobe = true;
 			window.location.hash = '/player2leftside';
 
 		}
