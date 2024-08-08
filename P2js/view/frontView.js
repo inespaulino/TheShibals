@@ -1,5 +1,5 @@
 
-import state from "/P2js/state/boardState.js";
+import state from "/P2js/state/state.js";
 
 function render() {
 
@@ -9,7 +9,7 @@ function render() {
 	lol.id = 'p2frontbody';
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-		<img id="lever_img" src="/resources/${getLever()}"/>
+		<img id="${getLeverId(state.wardrobe)}" src="/resources/${getLever()}"/>
 
     	<img id="img_door" src="/resources/${getDoor()}"/>
 
@@ -21,17 +21,16 @@ function render() {
        		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
     	</a>
 						
-	</div>`
+	</div>`;
 
 	div.appendChild(item);
 
-	const button = $('#lever_img');
 	const door = $('#img_door');
-	console.log(state);
-	if (state.boardState.wardrobe) {
+	if (state.wardrobe) {
+		const button = $('#lever_img');
 		button.on('click', function () {
-			state.boardState.lever = true;
-			state.boardState.door = true;
+			state.lever = true;
+			state.door = true;
 			door.attr('src', '/resources/door_open.jpg');
 			button.attr('src', '/resources/lever_upsidedown.png');
 
@@ -39,9 +38,9 @@ function render() {
 	}
 }
 function getLever(lever) {
-	if (lever && state.boardState.wardrobe)
+	if (lever && state.wardrobe)
 		return "lever_upsidedown.png";
-	else if (!lever && state.boardState.wardrobe)
+	else if (!lever && state.wardrobe)
 		return "lever.png";
 	return "wardrobe.png";
 }
@@ -50,5 +49,11 @@ function getDoor(door) {
 	if (door)
 		return "door_open.jpg";
 	return "door_closed.jpg";
+}
+
+function getLeverId(wardrobe){
+	if (wardrobe)
+		return "lever_img";
+	return "wardrobe_img";
 }
 export default { render };

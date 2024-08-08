@@ -43,7 +43,7 @@ function render() {
 function getLever(lever){
 	if (lever)
 		return "lever_upsidedown.png";
-	return "lever.png"
+	return "lever.png";
 }
 
 function getDoor(door){
