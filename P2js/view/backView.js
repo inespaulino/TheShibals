@@ -1,11 +1,11 @@
 function render() {
     
-	const background = document.querySelector('#p1div');
-	const body = document.querySelector('#p1leftbody') || document.querySelector('#p1rightbody') || document.querySelector("#p1frontbody");
+	const background = document.querySelector('#p2div');
+	const body = document.querySelector('#p2leftbody') || document.querySelector('#p2rightbody') || document.querySelector("#p2frontbody");
     console.log("render",background);
     body.innerHTML='';
-    const lol = $('#p1leftbody') || $('#p1rightbody');
-    lol.attr('id','p1backbody');
+    const lol = $('#p2leftbody') || $('#p2rightbody');
+    lol.attr('id','p2backbody');
 
 	const item = document.createElement('div');
 

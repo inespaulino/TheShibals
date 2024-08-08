@@ -1,14 +1,15 @@
 function render() {
 
-	const background = document.querySelector('#p1div');
-	const body = document.querySelector('#p1frontbody') || document.querySelector('#p1backbody');
+	const background = document.querySelector('#p2div');
+	const body = document.querySelector('#p2frontbody') || document.querySelector('#p2backbody');
     body.innerHTML='';
-    const lol = $('#p1frontbody') || $('#p1backody');
-    lol.attr('id','p1leftbody');
+    const lol = $('#p2frontbody') || $('#p2backody');
+    lol.attr('id','p2leftbody');
+    
 
 	const item = document.createElement('div');
 	item.innerHTML = `<div>
-        <img id="alchemy_img" src="/resources/Alchemy_table.png">
+        <img id="board_img" src="/resources/board.png">
         <img id="arrow_left" src="/resources/arrowleft.png"> 
         <img id="arrow_right" src="/resources/arrowright.png"> 						
 	</div>`
@@ -18,7 +19,7 @@ function render() {
     body.appendChild(background);
 
 	console.log('entrou no render');
-	const button = $('#alchemy_img');
+	const button = $('#board_img');
 	console.log('um botao', button);
 	const button2 = $('#arrow_left');
     const button3 = $('arrow_right');
@@ -41,7 +42,7 @@ function render() {
     button3.on('click', function(){
 		console.log("hola");
 		
-		console.log(button33.attr('src'));
+		console.log(button3.attr('src'));
 		
 	});
 }

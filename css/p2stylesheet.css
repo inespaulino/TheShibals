@@ -6,6 +6,32 @@
     min-height: 100vh;
     
 }
+#p2leftbody {
+    
+    background-image: url('/resources/alchemywall.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
+
+#p2rightbody {
+    
+    background-image: url('/resources/alchemywall.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
+#p2backbody {
+    
+    background-image: url('/resources/wall2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    
+}
+
 
 #lever_img {
     margin-left: 70%;
@@ -44,4 +70,20 @@
     position: absolute;
     right:5px;
     bottom: 100px;
+}
+#books_img {
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px; 
+    margin-left: 20%;
+    margin-top: 30%;
+
+}
+
+#board_img {
+    
+    margin-left: 60%;
+    margin-top: 10%;
+
 }

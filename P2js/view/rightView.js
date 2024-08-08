@@ -1,16 +1,15 @@
 function render() {
     console.log("riiiight");
-	const background = document.querySelector('#p1div');
-	const body = document.querySelector('#p1frontbody') || document.querySelector('#p1backbody');
+	const background = document.querySelector('#p2div');
+	const body = document.querySelector('#p2frontbody') || document.querySelector('#p2backbody');
     body.innerHTML='';
-    const lol = $('#p1frontbody') || $('#p1backbody');
-    lol.attr('id','p1rightbody');
+    const lol = $('#p2frontbody') || $('#p2backbody');
+    lol.attr('id','p2rightbody');
 
 	const item = document.createElement('div');
 
 	item.innerHTML = `<div>
         <img id="books_img" src="/resources/oldbooks.png"> 
-        
         <img id="arrow_left" src="/resources/arrowleft.png"> 
         <img id="arrow_right" src="/resources/arrowright.png"> 						
 	</div>`
@@ -20,7 +19,7 @@ function render() {
 
 	console.log('entrou no render');
 	const button = $('#books_img');
-    
+   
 	console.log('um botao', button);
     const button3 = $('#arrow_left');
     const button4 = $('arrow_right');
