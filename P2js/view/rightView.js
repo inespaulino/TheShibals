@@ -1,10 +1,8 @@
 function render() {
-    console.log("riiiight");
-	const background = document.querySelector('#p2div');
-	const body = document.querySelector('#p2frontbody') || document.querySelector('#p2backbody');
-    body.innerHTML='';
-    const lol = $('#p2frontbody') || $('#p2backbody');
-    lol.attr('id','p2rightbody');
+	const div = document.querySelector('#p2div');
+	div.innerHTML = '';
+    const lol = document.getElementById('p2leftbody') || document.getElementById('p2backbody') || document.getElementById("p2frontbody");
+    lol.id = 'p2rightbody';
 
 	const item = document.createElement('div');
 
@@ -19,36 +17,16 @@ function render() {
        		<img id="arrow_left" src="/resources/arrowleft.png" alt="Arrow Left"/>
     	</a>	
         					
-	</div>`
+	</div>`;
 	
-	background.appendChild(item);
-    body.appendChild(background);
-
-	console.log('entrou no render');
+	div.appendChild(item);
 	const button = $('#books_img');
    
-	console.log('um botao', button);
-    const button3 = $('#arrow_left');
-    const button4 = $('arrow_right');
-	
 
 	button.on('click', function(){
 		console.log("hola");
 		
 		console.log(button.attr('src'));
-		
-	});
-   
-    button3.on('click', function(){
-		console.log("hola");
-		
-		console.log(button3.attr('src'));
-		
-	});
-    button4.on('click', function(){
-		console.log("hola");
-		
-		console.log(button4.attr('src'));
 		
 	});
 }

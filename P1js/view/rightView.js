@@ -1,5 +1,4 @@
 function render() {
-    console.log("riiiight");
 	const div = document.querySelector('#p1div');
 	div.innerHTML = '';
     const lol = document.getElementById('p1leftbody') || document.getElementById('p1backbody') || document.getElementById("p1frontbody");
